@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="Hundetrainer, Hund, Trainer, Training, Problem">
+    <meta name="description" content="Hundetrainer">
+    <meta name="athor" content="Benjamin Löffler">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <base href="">
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="script.js" defer></script>
+    <link rel="icon" type="image/vnd.microsoft.icon" href="favicon.ico">
+    <title>Hundetrainer</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>DOG MAN - Der Hundeflüsterer</h1>
+    </header>
+
+    <nav>
+        <div class="nav_logo"><a href="index.html"><img class="nav_logo" src="Logo2.png" alt="Logo"></a></div>
+        <a href="#" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <div class="list-container">
+            <ul>
+                <li><a href="angebot.html">Angebot</a></li>
+                <li><a class="active" href="kontakt.html">Kontakt</a></li>
+                <li><a href="datenschutzerklärung.html">Datenschutz</a></li>
+                <li><a href="impressum.html">Impressum</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <article class="article_kontakt">
+        <h2>
+            <center>Kontakt</center>
+        </h2>
+        <br><br><br>
+
+        <form action="script.php">
+
+
+            <div class="inputs_container">
+                <p>Hinweis: Angaben mit * sind Pflichtfelder.</p>
+                <fieldset>
+                    <legend>Personalien</legend>
+
+                    <label for="vorname">Vorname*</label>
+                    <input type="text" name="vorname" id="vorname" required autofocus><br>
+
+                    <label for="nachname">Nachname*</label>
+                    <input type="text" name="nachname" id="nachname" required><br>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Ihre Kontaktdaten</legend>
+                    <label for="email">Email*</label>
+                    <input type="email" name="email" id="email" required><br>
+
+                    <label for="telefonnummer">Telefonnummer</label>
+                    <input type="tel" name="telefonnummer" id="telefonnummer" placeholder="+49"><br>
+                </fieldset>
+                <fieldset>
+                    <legend>Daten des Hundes</legend>
+
+                    <label for="dogname">Name</label>
+                    <input type="text" name="dogname" id="dogname">
+
+                    <label for="dogage">Alter</label>
+                    <input type="text" name="dogage" id="dogage">
+
+                    <label for="dogs">Rasse</label>
+                    <select name="dogs" id="dogs">
+                        <option value="bulldogge">Bulldogge</option>
+                        <option value="dalmatiner">Dalmatiner</option>
+                        <option value="laprador">Laprador</option>
+                        <option value="rottweiler">Rottweiler</option>
+                        <option value="schäferhund">Schäferhund</option>
+                    </select>
+                </fieldset>
+
+            </div>
+            <div class="checkbox_container">
+                <fieldset>
+                    <legend>Welche Probleme liegen vor</legend>
+                    <ul class="kontakt_checkliste">
+                        <li>
+                            <input type="checkbox" name="aggressiv" id="aggressiv">
+                            <label for="aggressiv">Hund ist aggressiv</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="launisch" id="launisch">
+                            <label for="launisch">Hund ist launisch</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="sonstiges" id="sonstiges">
+                            <label for="sonstiges">Sonstiges</label>
+                        </li>
+                    </ul>
+                </fieldset>
+            </div>
+
+            <div class="date_container">
+                <fieldset>
+                    <legend>Termin wählen</legend>
+                    <input type="date">
+                </fieldset>
+            </div>
+
+
+            <div class="submit_container">
+                <input type="submit" value="Absenden"></input>
+            </div>
+        </form>
+
+
+    </article>
+
+
+    <footer>
+        <q>Hunde, die bellen, beißen nicht</q>
+    </footer>
+</body>
+
+</html>
